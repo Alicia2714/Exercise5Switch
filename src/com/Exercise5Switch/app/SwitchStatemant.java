@@ -17,7 +17,7 @@ public class SwitchStatemant {
 		//Input data validation
 		
 		do {
-			int nMes=0;
+		    nMes=0;
 			while (nMes<=0 || nMes>12){
 				System.out.println("Dame el numero del mes");
 				nMes= input.nextInt();
@@ -60,8 +60,8 @@ public class SwitchStatemant {
 			}
 			
 			System.out.println("Do you want to visualize another month?");
-			answer= input.next();
-		}while(answer=y);
+			answer= input.next().charAt(0);
+		}while(answer=='y');
 		
 		
 
